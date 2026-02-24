@@ -1,4 +1,4 @@
-# Hi there 👋 I'm Parthiban Sivakumar
+#  Parthiban Sivakumar
 
 > Full-stack developer | Open-source enthusiast | Building delightful web experiences
 
