@@ -3,9 +3,10 @@
 > Full-stack developer | Open-source enthusiast | Building delightful web experiences
 
 [![Website](https://img.shields.io/badge/website-yourwebsite.com-007ACC)](https://yourwebsite.com) 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile) 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin&logoColor=white)](www.linkedin.com/in/parthiban-sivakumar-a06110152) 
 [![Twitter](https://img.shields.io/badge/Twitter-@yourhandle-1DA1F2?logo=twitter&logoColor=white)](https://twitter.com/yourhandle)
-https://github.com/parthiban-sivakumar
+[![Github](https://img.shields.io/badge/Github-@yourhandle-1DA1F2?logo=twitter&logoColor=white)](https://github.com/parthiban-sivakumar)
+
 ---
 
 About Me
