@@ -9,7 +9,7 @@
 ---
 
 About Me
-- I'm Parthiban — I enjoy crafting reliable, maintainable web apps and contributing to open-source.
+- I'm Parthiban Sivakumar — I enjoy crafting reliable, maintainable web apps and contributing to open-source.
 - I work across the stack: from backend services and APIs to polished front-end UIs.
 - I'm passionate about developer experience, automation, and learning new technologies.
 
