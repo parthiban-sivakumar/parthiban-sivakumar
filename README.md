@@ -2,9 +2,8 @@
 
 > Full-stack developer | Open-source enthusiast | Building delightful web experiences
 
-[![Website](https://img.shields.io/badge/website-yourwebsite.com-007ACC)](https://yourwebsite.com) 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin&logoColor=white)](www.linkedin.com/in/parthiban-sivakumar-a06110152) 
-[![Twitter](https://img.shields.io/badge/Twitter-@yourhandle-1DA1F2?logo=twitter&logoColor=white)](https://twitter.com/yourhandle)
+
+[![LinkedIn]([https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin&logoColor=white)](www.linkedin.com/in/parthiban-sivakumar-a06110152](https://www.linkedin.com/in/parthiban-sivakumar-a06110152/)) 
 [![Github](https://img.shields.io/badge/Github-@yourhandle-1DA1F2?logo=twitter&logoColor=white)](https://github.com/parthiban-sivakumar)
 
 ---
@@ -27,12 +26,7 @@ What I'm Working On
 - Building a personal project (replace with project name) that simplifies X for Y.
 - Contributing to open-source libraries focused on developer DX.
 
-Featured Projects
-- [project-one](https://github.com/parthiban-sivakumar/project-one) — Short description of what it does and why it matters.
-- [project-two](https://github.com/parthiban-sivakumar/project-two) — Short description, tech used, and highlight.
-- [project-three](https://github.com/parthiban-sivakumar/project-three) — Short description and link to docs/demo.
 
-(Replace the above with repositories you'd like featured — see "What I need from you" below.)
 
 GitHub Stats
 ![Parthiban's GitHub stats](https://github-readme-stats.vercel.app/api?username=parthiban-sivakumar&show_icons=true&theme=radical)
@@ -41,10 +35,9 @@ Top Languages
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=parthiban-sivakumar&layout=compact&theme=radical)
 
 How to Reach Me
-- Email: parthiban@example.com
-- Website: https://yourwebsite.com
-- LinkedIn: https://linkedin.com/in/yourprofile
-- Twitter: https://twitter.com/yourhandle
+- Email: parthibansivakumar@outlook.com
+- LinkedIn: https://www.linkedin.com/in/parthiban-sivakumar-a06110152/
+
 
 Open to Work / Collaboration
 - I'm open to contract roles, collaborations on open-source, and mentoring opportunities.
