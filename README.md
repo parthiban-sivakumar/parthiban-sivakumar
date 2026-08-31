@@ -3,7 +3,7 @@
 > AI Engineer | Open-source enthusiast | Building delightful web experiences
 
 
-[![LinkedIn]([https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin&logoColor=white)(www.linkedin.com/in/parthiban-sivakumar-a06110152](https://www.linkedin.com/in/parthiban-sivakumar-a06110152/)) 
+[![LinkedIn]([https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin&logoColor=white)(www.linkedin.com/in/parthiban-sivakumar-a06110152)
 [![Github](https://img.shields.io/badge/Github-@yourhandle-1DA1F2?logo=twitter&logoColor=white)](https://github.com/parthiban-sivakumar)
 
 ---
