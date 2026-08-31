@@ -4,7 +4,7 @@
 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin&logoColor=white)](https://linkedin.com)
-[![Github](https://shields.io)](https://github.com/parthiban-sivakumar)
+[![Github](https://img.shields.io/badge/Github))](https://github.com/parthiban-sivakumar)
 
 ---
 
