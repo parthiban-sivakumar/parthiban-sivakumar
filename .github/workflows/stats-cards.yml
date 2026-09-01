@@ -1,0 +1,57 @@
+name: README stats cards
+
+# Generates the github-readme-stats cards as static SVGs inside this repo, so
+# the profile does not depend on any third-party host staying up. No Vercel
+# account and no PAT are needed: GITHUB_TOKEN covers public stats.
+#
+# Schedule-only, like the contribution graph. Refresh manually with:
+#   gh workflow run "README stats cards"
+
+on:
+  schedule:
+    - cron: "42 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stats-cards
+  cancel-in-progress: true
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate stats card
+        uses: readme-tools/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=8E2DE2&icon_color=8E2DE2&text_color=E6EDF3
+          path: profile/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # fail loudly instead of committing a "Something went wrong" card
+          fail_on_error: "true"
+
+      - name: Generate top languages card
+        uses: readme-tools/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=8E2DE2&text_color=E6EDF3
+          path: profile/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: "true"
+
+      - name: Commit refreshed cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          if git diff --staged --quiet; then
+            echo "cards unchanged; nothing to commit"
+            exit 0
+          fi
+          git commit -m "Update README stats cards"
+          git push

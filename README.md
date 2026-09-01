@@ -213,7 +213,7 @@ Django services and banking integrations for accounts and investments.
 
 ## 📡 Activity
 
-Not the usual heatmap. Every day I contributed is a **node**, sized and coloured by volume, and each one is **wired to the next in sequence** — so a year of work reads as a single signal traced across the calendar, with a pulse running the route. Rendered daily by [a workflow in this repo](.github/workflows/contribution-graph.yml).
+Not the usual heatmap. Every day I contributed is a **node**, sized and coloured by volume, and each one is **wired to the next in sequence** — so a year of work reads as a single signal traced across the calendar, with a pulse running the route. Rendered daily by [a workflow in this repo](.github/workflows/contribution-graph.yml) — as are the stats cards below, via [another one](.github/workflows/stats-cards.yml), so nothing here depends on a third-party host staying up.
 
 <div align="center">
 
@@ -225,6 +225,11 @@ Not the usual heatmap. Every day I contributed is a **node**, sized and coloured
 
 <br><br>
 
+<img height="170" src="./profile/stats.svg" alt="GitHub stats" />
+<img height="170" src="./profile/top-langs.svg" alt="Top languages" />
+
+<br>
+
 <img src="https://img.shields.io/github/followers/parthiban-sivakumar?style=for-the-badge&color=8E2DE2&labelColor=0D1117&logo=github&logoColor=white" alt="Followers" />
 <img src="https://img.shields.io/github/stars/parthiban-sivakumar?affiliations=OWNER&style=for-the-badge&color=8E2DE2&labelColor=0D1117&logo=github&logoColor=white" alt="Stars" />
 
@@ -234,29 +239,6 @@ Not the usual heatmap. Every day I contributed is a **node**, sized and coloured
 
 </div>
 
-<!--
-  STATS CARDS - not yet wired up.
-
-  The public instance (github-readme-stats.vercel.app) returns
-  DEPLOYMENT_PAUSED, and github-profile-trophy / activity-graph return 402,
-  so those hosts are dead. Two working ways to bring the cards back:
-
-  A) Self-hosted Vercel instance
-     1. Fork github.com/anuraghazra/github-readme-stats
-     2. Create a classic PAT with scopes: repo, read:user
-     3. vercel.com -> Add New -> Project -> import the fork
-     4. Add the PAT as an env var named PAT_1, then Deploy
-     5. Replace YOUR-INSTANCE below with the deployment host
-     Then delete these comment markers to enable:
-
-     <img height="165" src="https://YOUR-INSTANCE.vercel.app/api?username=parthiban-sivakumar&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=8E2DE2&icon_color=8E2DE2" alt="GitHub stats" />
-     <img height="165" src="https://YOUR-INSTANCE.vercel.app/api/top-langs/?username=parthiban-sivakumar&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=8E2DE2" alt="Top languages" />
-
-  B) Generate the cards in this repo via GitHub Actions - no Vercel account,
-     no PAT for public stats. Uses readme-tools/github-readme-stats-action,
-     commits SVGs here, and embeds them as ./profile/stats.svg. Same pattern
-     as .github/workflows/contribution-graph.yml already in this repo.
--->
 ---
 
 ## 🔬 Open Source & Explorations
