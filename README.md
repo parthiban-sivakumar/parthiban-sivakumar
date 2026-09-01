@@ -29,7 +29,7 @@
 </tr>
 </table>
 
-**Jump to:** [What I Do](#-what-i-do) · [Experience](#-experience) · [Projects](#-projects) · [Tech Stack](#-tech-stack) · [Activity](#-activity) · [Contact](#-contact)
+**Jump to:** [What I Do](#-what-i-do) · [Projects](#-projects) · [Tech Stack](#-tech-stack) · [Activity](#-activity) · [Contact](#-contact)
 
 ---
 
@@ -62,46 +62,6 @@ Serverless and containerized services on **AWS** and **GCP**, locked down with *
 
 </td>
 </tr>
-</table>
-
----
-
-## 💼 Experience
-
-<table>
-<tr><td width="200" valign="top">
-
-**AI Engineer**
-
-`Apr 2026 – Present`
-
-</td><td valign="top">
-
-Building **Olum.ai**, an enterprise AI platform, from the ground up.
-
-- Designed and built a **production-ready AI platform from scratch** — Microservices, Multi-Agent Architecture, LLMs, RAG, MCP, and ML
-- Integrated **AWS Bedrock foundation models** for managed, enterprise-grade LLM inference, and engineered the end-to-end workflows around them
-- Built **serverless + containerized services** on Lambda, API Gateway, and S3, secured with **IAM role-based access control**
-- Instrumented **CloudWatch** logging, metrics, and alerting for production observability
-- Shipped **cloud-native CI/CD** with GitHub Actions
-
-</td></tr>
-<tr><td valign="top">
-
-**Software Developer**
-
-`Jan 2023 – Mar 2026`
-
-</td><td valign="top">
-
-Backend and AI engineering across five very different domains.
-
-- Built **scalable Python backends** spanning AI/ML, Video Analytics, IoT, FinTech, and E-Commerce
-- Delivered **real-time video analytics and VMS** using YOLO, ONNX, and GStreamer — encoding, transcoding, and streaming pipelines included
-- Designed **REST APIs, AI inference pipelines,** and intelligent workflows with LLMs, RAG, LangChain, and LangGraph
-- Deployed **containerized apps** on Docker, Kubernetes, GCP, PostgreSQL, MongoDB, Redis, and Elasticsearch
-
-</td></tr>
 </table>
 
 ---
