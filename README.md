@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8E2DE2,50:C13BFF,100:22D3EE&height=190&section=header&text=Parthiban%20Sivakumar&fontColor=ffffff&fontSize=46&animation=fadeIn&fontAlignY=36&desc=AI%20Engineer%20%E2%80%94%20Generative%20AI,%20LLMs%20%26%20Video%20Analytics&descAlignY=57&descSize=17" alt="Parthiban Sivakumar — AI Engineer" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:8E2DE2,50:C13BFF,100:22D3EE&height=190&section=header&text=Parthiban%20Sivakumar&fontColor=ffffff&fontSize=46&animation=fadeIn&fontAlignY=36&desc=AI%20Engineer%20%C2%B7%20Generative%20AI%20%C2%B7%20LLMs%20%C2%B7%20Video%20Analytics&descAlignY=57&descSize=17" alt="Parthiban Sivakumar — AI Engineer" />
 
 <a href="https://www.linkedin.com/in/parthiban-sivakumar-a06110152/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="mailto:parthibansivakumar@outlook.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=maildotru&logoColor=white" alt="Email" /></a>
