@@ -1,0 +1,50 @@
+name: Contribution signal graph
+
+on:
+  schedule:
+    - cron: "17 2 * * *"       # daily, a little after midnight UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/scripts/**"
+      - ".github/workflows/contribution-graph.yml"
+
+concurrency:
+  group: contribution-graph
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch contribution calendar
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p dist
+          python .github/scripts/fetch_contributions.py \
+            "${{ github.repository_owner }}" dist/contributions.json
+
+      - name: Render signal graph
+        run: |
+          python .github/scripts/signal_graph.py \
+            dist/contributions.json dist
+          rm dist/contributions.json
+          ls -la dist
+
+      - name: Publish to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
