@@ -1,14 +1,19 @@
 name: Contribution signal graph
 
+# Schedule-only (plus manual dispatch): this workflow never runs on push.
+#
+# Note: the published commits land on the `output` branch and are authored by
+# github-actions[bot], so they do not count toward the profile contribution
+# graph either way -- contributions are only counted for commits the account
+# authors on the default branch (or gh-pages). Keeping this schedule-only just
+# avoids redundant runs.
+#
+# After editing the scripts, refresh the graph with:
+#   gh workflow run "Contribution signal graph"
 on:
   schedule:
     - cron: "17 2 * * *"       # daily, a little after midnight UTC
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - ".github/scripts/**"
-      - ".github/workflows/contribution-graph.yml"
 
 concurrency:
   group: contribution-graph
