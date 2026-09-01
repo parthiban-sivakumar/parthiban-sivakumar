@@ -235,15 +235,28 @@ Not the usual heatmap. Every day I contributed is a **node**, sized and coloured
 </div>
 
 <!--
-  The github-readme-stats cards are intentionally omitted: the public instance
-  (github-readme-stats.vercel.app) currently returns DEPLOYMENT_PAUSED, and
-  github-profile-trophy / github-readme-activity-graph return 402. To add them,
-  deploy your own instance (one click, see the project README) and use:
+  STATS CARDS - not yet wired up.
 
-  <img height="165" src="https://YOUR-INSTANCE.vercel.app/api?username=parthiban-sivakumar&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=8E2DE2&icon_color=8E2DE2" />
-  <img height="165" src="https://YOUR-INSTANCE.vercel.app/api/top-langs/?username=parthiban-sivakumar&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=8E2DE2" />
+  The public instance (github-readme-stats.vercel.app) returns
+  DEPLOYMENT_PAUSED, and github-profile-trophy / activity-graph return 402,
+  so those hosts are dead. Two working ways to bring the cards back:
+
+  A) Self-hosted Vercel instance
+     1. Fork github.com/anuraghazra/github-readme-stats
+     2. Create a classic PAT with scopes: repo, read:user
+     3. vercel.com -> Add New -> Project -> import the fork
+     4. Add the PAT as an env var named PAT_1, then Deploy
+     5. Replace YOUR-INSTANCE below with the deployment host
+     Then delete these comment markers to enable:
+
+     <img height="165" src="https://YOUR-INSTANCE.vercel.app/api?username=parthiban-sivakumar&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=8E2DE2&icon_color=8E2DE2" alt="GitHub stats" />
+     <img height="165" src="https://YOUR-INSTANCE.vercel.app/api/top-langs/?username=parthiban-sivakumar&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=8E2DE2" alt="Top languages" />
+
+  B) Generate the cards in this repo via GitHub Actions - no Vercel account,
+     no PAT for public stats. Uses readme-tools/github-readme-stats-action,
+     commits SVGs here, and embeds them as ./profile/stats.svg. Same pattern
+     as .github/workflows/contribution-graph.yml already in this repo.
 -->
-
 ---
 
 ## 🔬 Open Source & Explorations
