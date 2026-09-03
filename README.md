@@ -29,7 +29,7 @@
 </tr>
 </table>
 
-**Jump to:** [What I Do](#-what-i-do) · [Projects](#-projects) · [Tech Stack](#-tech-stack) · [Activity](#-activity) · [Contact](#-contact)
+**Jump to:** [What I Do](#-what-i-do) · [Projects](#-projects) · [Tech Stack](#-tech-stack) · [Activity](#-activity) · [Open Source](#-open-source) · [Contact](#-contact)
 
 ---
 
@@ -241,14 +241,40 @@ Not the usual heatmap. Every day I contributed is a **node**, sized and coloured
 
 ---
 
-## 🔬 Open Source & Explorations
+## 🌍 Open Source
+
+### Merged Contributions
+
+<table>
+<tr><td width="160" valign="top" align="center">
+
+**[CrewAI](https://github.com/crewAIInc/crewAI)**
+
+![Stars](https://img.shields.io/github/stars/crewAIInc/crewAI?style=flat-square&color=8E2DE2&labelColor=0D1117&logo=github&logoColor=white)
+
+`CONTRIBUTOR`
+
+</td><td valign="top">
+
+**[#7206](https://github.com/crewAIInc/crewAI/pull/7206) · `fix(llms): normalize scheme and port in Ollama base URL`**
+
+<sub>merged Sep 2026 · +54 / −10 across 2 files · shipped with tests</sub>
+
+Fixes [#7205](https://github.com/crewAIInc/crewAI/issues/7205). `OLLAMA_HOST` follows Ollama's own convention, where a bare host or `host:port` is normal — the client fills in scheme and port itself. CrewAI only appended `/v1`, so `OLLAMA_HOST=0.0.0.0` produced a `base_url` of `0.0.0.0/v1` and every local model call died with `Failed to connect to OpenAI API` — a message naming the wrong provider entirely, sending people off debugging API keys instead of a malformed URL. Six of nine realistic `OLLAMA_HOST` forms were affected, including Ollama's own documented default `127.0.0.1:11434`.
+
+</td></tr>
+</table>
+
+### Explorations
+
+Repos I'm reading, forking, and tinkering with in the open:
 
 | Repository | Focus |
 | :--- | :--- |
 | [**video_analytics**](https://github.com/parthiban-sivakumar/video_analytics-) | Turning raw camera feeds into structured, searchable insight |
 | [**onvif-django-client**](https://github.com/parthiban-sivakumar/onvif-django-client) | Discovering and controlling ONVIF cameras from Django |
 | [**whisper_streaming**](https://github.com/parthiban-sivakumar/whisper_streaming) | Real-time speech-to-text and translation for long-form audio |
-| [**crewAI**](https://github.com/parthiban-sivakumar/crewAI) | Orchestrating role-playing autonomous agents that cooperate |
+| [**crewAI**](https://github.com/parthiban-sivakumar/crewAI) | My working fork of the agentic framework — where the fix above started |
 | [**github-mcp-server**](https://github.com/parthiban-sivakumar/github-mcp-server) | Wiring LLMs into real developer tooling via MCP |
 | [**go2rtc**](https://github.com/parthiban-sivakumar/go2rtc) | Camera streaming across RTSP, WebRTC, HLS, and friends |
 
