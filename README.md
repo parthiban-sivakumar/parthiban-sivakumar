@@ -243,38 +243,36 @@ Not the usual heatmap. Every day I contributed is a **node**, sized and coloured
 
 ## 🌍 Open Source
 
-### Merged Contributions
+**4 merged pull requests** across two of the larger open-source agent frameworks — 140k+ combined stars. Mostly the unglamorous kind: first-run failures, misleading error messages, and a flaky test nobody could pin down.
 
-<table>
-<tr><td width="160" valign="top" align="center">
+### 🦌 [bytedance/deer-flow](https://github.com/bytedance/deer-flow) &nbsp; ![Stars](https://img.shields.io/github/stars/bytedance/deer-flow?style=flat-square&color=8E2DE2&labelColor=0D1117&logo=github&logoColor=white) &nbsp; `CONTRIBUTOR`
 
-**[CrewAI](https://github.com/crewAIInc/crewAI)**
+<sub>A long-horizon SuperAgent harness that researches, codes, and creates.</sub>
 
-![Stars](https://img.shields.io/github/stars/crewAIInc/crewAI?style=flat-square&color=8E2DE2&labelColor=0D1117&logo=github&logoColor=white)
+| PR | Fix | Merged |
+| :--- | :--- | :--- |
+| [#5296](https://github.com/bytedance/deer-flow/pull/5296) | **`fix(doctor)`: skip LLM checks when the models block is empty** — on a clean clone, `make doctor` greeted every new user with three raw `'NoneType' object is not iterable` tracebacks. A commented-out `models:` key parses as `None`, so the `[]` default in `.get()` never applied. <sub>+26/−4 · fixes [#5295](https://github.com/bytedance/deer-flow/issues/5295)</sub> | Sep 8 |
+| [#5301](https://github.com/bytedance/deer-flow/pull/5301) | **`fix(doctor)`: skip tool checks when the tools block is empty** — the same defect class surviving at two more sites for `tools:`, found by auditing the rest of the file after #5296. <sub>+31/−2 · fixes [#5300](https://github.com/bytedance/deer-flow/issues/5300)</sub> | Sep 8 |
+| [#5299](https://github.com/bytedance/deer-flow/pull/5299) | **`fix(tests)`: await future completion before asserting `done()`** — a flaky test failing across unrelated PRs. Traced to a race in the test itself: `run_coroutine_threadsafe`'s future is marked done by the loop *after* the coroutine returns, but the test signalled from inside it. Confirmed by correlating failures on `main` and an unrelated branch 16 seconds apart on different shards. <sub>+3/−1 · fixes [#5298](https://github.com/bytedance/deer-flow/issues/5298)</sub> | Sep 8 |
 
-`CONTRIBUTOR`
+### 🤖 [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI) &nbsp; ![Stars](https://img.shields.io/github/stars/crewAIInc/crewAI?style=flat-square&color=8E2DE2&labelColor=0D1117&logo=github&logoColor=white) &nbsp; `CONTRIBUTOR`
 
-</td><td valign="top">
+<sub>Framework for orchestrating role-playing, autonomous AI agents.</sub>
 
-**[#7206](https://github.com/crewAIInc/crewAI/pull/7206) · `fix(llms): normalize scheme and port in Ollama base URL`**
+| PR | Fix | Merged |
+| :--- | :--- | :--- |
+| [#7206](https://github.com/crewAIInc/crewAI/pull/7206) | **`fix(llms)`: normalize scheme and port in the Ollama base URL** — `OLLAMA_HOST=0.0.0.0` produced a `base_url` of `0.0.0.0/v1`, so every local model call failed with `Failed to connect to OpenAI API` — naming the wrong provider and sending people off debugging API keys. 6 of 9 realistic `OLLAMA_HOST` forms were broken, including Ollama's documented default. <sub>+54/−10 · with tests · fixes [#7205](https://github.com/crewAIInc/crewAI/issues/7205)</sub> | Sep 3 |
 
-<sub>merged Sep 2026 · +54 / −10 across 2 files · shipped with tests</sub>
+**Currently in review:** [#7333](https://github.com/crewAIInc/crewAI/pull/7333) give each async task its own executor · [#7260](https://github.com/crewAIInc/crewAI/pull/7260) count each LLM instance once when summing usage metrics · [#7239](https://github.com/crewAIInc/crewAI/pull/7239) identify tasks by object when copying instead of by key
 
-Fixes [#7205](https://github.com/crewAIInc/crewAI/issues/7205). `OLLAMA_HOST` follows Ollama's own convention, where a bare host or `host:port` is normal — the client fills in scheme and port itself. CrewAI only appended `/v1`, so `OLLAMA_HOST=0.0.0.0` produced a `base_url` of `0.0.0.0/v1` and every local model call died with `Failed to connect to OpenAI API` — a message naming the wrong provider entirely, sending people off debugging API keys instead of a malformed URL. Six of nine realistic `OLLAMA_HOST` forms were affected, including Ollama's own documented default `127.0.0.1:11434`.
-
-</td></tr>
-</table>
-
-### Explorations
-
-Repos I'm reading, forking, and tinkering with in the open:
+### 🔬 Explorations
 
 | Repository | Focus |
 | :--- | :--- |
 | [**video_analytics**](https://github.com/parthiban-sivakumar/video_analytics-) | Turning raw camera feeds into structured, searchable insight |
 | [**onvif-django-client**](https://github.com/parthiban-sivakumar/onvif-django-client) | Discovering and controlling ONVIF cameras from Django |
 | [**whisper_streaming**](https://github.com/parthiban-sivakumar/whisper_streaming) | Real-time speech-to-text and translation for long-form audio |
-| [**crewAI**](https://github.com/parthiban-sivakumar/crewAI) | My working fork of the agentic framework — where the fix above started |
+| [**deer-flow**](https://github.com/parthiban-sivakumar/deer-flow) · [**crewAI**](https://github.com/parthiban-sivakumar/crewAI) | Working forks of the two frameworks above — where the fixes start |
 | [**github-mcp-server**](https://github.com/parthiban-sivakumar/github-mcp-server) | Wiring LLMs into real developer tooling via MCP |
 | [**go2rtc**](https://github.com/parthiban-sivakumar/go2rtc) | Camera streaming across RTSP, WebRTC, HLS, and friends |
 
